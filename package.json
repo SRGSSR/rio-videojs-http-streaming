@@ -1,7 +1,7 @@
 {
-  "name": "@videojs/http-streaming",
-  "version": "3.2.0",
-  "description": "Play back HLS and DASH with Video.js, even where it's not natively supported",
+  "name": "@leonchabbey/rio-videojs-http-streaming",
+  "version": "3.2.0-1",
+  "description": "https://github.com/SRGSSR/rio-videojs-http-streaming/pull/1",
   "main": "dist/videojs-http-streaming.cjs.js",
   "module": "dist/videojs-http-streaming.es.js",
   "repository": {
