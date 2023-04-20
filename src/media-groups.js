@@ -600,7 +600,8 @@ export const initialize = {
           const track = tech.addRemoteTextTrack({
             id: variantLabel,
             kind: 'subtitles',
-            default: properties.default && properties.autoselect,
+            // Disable until we can tell Stipo to not set default to true on text tracks
+            default: false,
             language: properties.language,
             label: variantLabel
           }, false).track;
@@ -653,7 +654,8 @@ export const initialize = {
           label: variantLabel,
           language: properties.language,
           instreamId: properties.instreamId,
-          default: properties.default && properties.autoselect
+          // Disable until we can tell Stipo to not set default to true on text tracks
+          default: false
         };
 
         if (captionServices[newProps.instreamId]) {
@@ -672,7 +674,8 @@ export const initialize = {
           const track = tech.addRemoteTextTrack({
             id: newProps.instreamId,
             kind: 'captions',
-            default: newProps.default,
+            // Disable until we can tell Stipo to not set default to true on text tracks
+            default: false,
             language: newProps.language,
             label: newProps.label
           }, false).track;
